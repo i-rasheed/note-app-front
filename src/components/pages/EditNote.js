@@ -12,7 +12,7 @@
 // useEffect(() => {
 //     const getANote = async () => {
 //       const blogRes = await Axios.get(
-//         "http://localhost:5000/blog/" + props.match.params.id,
+//         "http://:5000/blog/" + props.match.params.id,
 //         { headers: { "x-auth-token": userData.token } }
 //       );
 //       setTitle(blogRes.data.title)

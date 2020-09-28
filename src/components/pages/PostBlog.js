@@ -27,7 +27,7 @@ const submit = async (e) => {
     try {
         const post = { title, text};
         const postRes = await Axios.post(
-            "http://localhost:5000/blog",
+            `${process.env.REACT_APP_BACKEND_URL}/blog`,
             post,
             { headers: { "x-auth-token": userData.token } }
           );
