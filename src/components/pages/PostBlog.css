@@ -1,0 +1,19 @@
+.submit-form{
+    margin-top: 5rem;
+}
+
+#title{
+    width: 20rem;
+}
+
+#text{
+    width: 20rem;
+    height: 10rem;
+}
+
+#blogsubmit{
+    background: red;
+    border-radius: 2px;
+    padding: 4px;
+    color: white;
+}
