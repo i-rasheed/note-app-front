@@ -23,7 +23,7 @@ export default function MyBlog() {
 
 
       const deleteBlog = async (id) =>{
-       const deleteResponse = await Axios.delete(process.env.REACT_APP_BACKEND_URL + `/blog/${id}`, 
+       const deleteResponse = await Axios.delete(`${process.env.REACT_APP_BACKEND_URL}/blog/${id}`, 
         {headers: {"x-auth-token": userData.token}})
          console.log(deleteResponse.data) 
          let remainingBlog = blogs.filter(el => el._id !== id)
